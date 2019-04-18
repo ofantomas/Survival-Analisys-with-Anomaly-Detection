@@ -70,7 +70,7 @@ def generate_tensor_dataset(cross_cor, window_size=5, test=False):
         
     return data.TensorDataset(torch.stack(object_list), torch.stack(target_list))
 
-#Survival analysis stuff
+#Survival analisys stuff
 
 def compute_hazard(X, timeline, coeffs, max_duration=100000, rho=1, baseline=None):
     if baseline is None:
